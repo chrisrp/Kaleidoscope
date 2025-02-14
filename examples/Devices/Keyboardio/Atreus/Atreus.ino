@@ -52,6 +52,7 @@ enum {
 #define Key_And         LSHIFT(Key_7)
 #define Key_Star        LSHIFT(Key_8)
 #define Key_Plus        LSHIFT(Key_Equals)
+#define Key_Tilde       LSHIFT(Key_Backtick)
 
 enum {
   QWERTY,
@@ -76,15 +77,15 @@ KEYMAPS(
 
   [FUN] = KEYMAP_STACKED
   (
-       Key_Exclamation ,Key_At           ,Key_UpArrow   ,Key_Dollar           ,Key_Percent
-      ,Key_LeftParen   ,Key_LeftArrow    ,Key_DownArrow ,Key_RightArrow       ,Key_RightParen
-      ,Key_LeftBracket ,Key_RightBracket ,Key_Hash      ,Key_LeftCurlyBracket ,Key_RightCurlyBracket ,Key_Caret
-      ,TG(UPPER)       ,Key_Insert       ,Key_LeftGui   ,Key_LeftShift        ,Key_Delete         ,Key_LeftControl
+       Key_Exclamation ,Key_At           ,Key_LeftCurlyBracket  ,Key_RightCurlyBracket  ,Key_RightArrow
+      ,Key_Hash        ,Key_Dollar       ,Key_LeftParen         ,Key_RightParen         ,Key_LeftArrow
+      ,Key_Percent     ,Key_Caret        ,Key_LeftBracket       ,Key_RightBracket       ,Key_Tilde        ,Key_Caret
+      ,TG(UPPER)       ,Key_Insert       ,Key_LeftGui           ,Key_LeftShift          ,Key_Delete       ,Key_LeftControl
 
-                   ,Key_PageUp   ,Key_7 ,Key_8      ,Key_9 ,Key_Backspace
-                   ,Key_PageDown ,Key_4 ,Key_5      ,Key_6 ,___
-      ,Key_And     ,Key_Star     ,Key_1 ,Key_2      ,Key_3 ,Key_Plus
-      ,Key_LeftAlt ,Key_Space    ,___   ,Key_Period ,Key_0 ,Key_Equals
+                   ,Key_UpArrow    ,Key_7 ,Key_8      ,Key_9 ,Key_Star
+                   ,Key_DownArrow  ,Key_4 ,Key_5      ,Key_6 ,Key_Plus
+      ,Key_And     ,Key_And        ,Key_1 ,Key_2      ,Key_3 ,Key_Backslash
+      ,Key_LeftAlt ,Key_Space      ,___   ,Key_Period ,Key_0 ,Key_Equals
    ),
 
   [UPPER] = KEYMAP_STACKED
